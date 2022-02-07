@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public float speed = 5;
-    Rigidbody2D rb2D;
-    bool jumping;
+    public float speed;
     public float jumpForce;
+    Rigidbody2D rb2D;
+    SpriteRenderer spriteRenderer;
+    BoxCollider2D boxCollider;
+    public Sprite[] sprites;
+    bool jumping;
 
     // Start is called before the first frame update
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        boxCollider = GetComponent<BoxCollider2D>();
+        speed = 6;
+        jumpForce = 5;
     }
 
     // Update is called once per frame
@@ -43,5 +50,21 @@ public class PlayerMovement : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void ButtonPressed()
+    {
+        spriteRenderer.sprite = sprites[1];
+        boxCollider.size = new Vector2(1, 0.75f);
+        speed = 8;
+        jumpForce = 7;
+    }
+
+    public void ButtonReset()
+    {
+        spriteRenderer.sprite = sprites[0];
+        boxCollider.size = new Vector2(1, 1.17f);
+        speed = 5;
+        jumpForce = 5;
     }
 }

@@ -6,10 +6,12 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public bool playerPressed;
+    PlayerMovement pm;
     // Start is called before the first frame update
     void Start()
     {
         playerPressed = false;
+        pm = FindObjectOfType<PlayerMovement>();
     }
 
     // Update is called once per frame
@@ -18,17 +20,17 @@ public class GameManager : MonoBehaviour
         
     }
 
-    void PressButton() {
+    public void PressButton() {
         playerPressed = true;
+        pm.ButtonPressed();
         StartCoroutine(ResetButton());
     }
 
     IEnumerator ResetButton()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(10f);
         playerPressed = false;
-        //Trigger player to return to normal size
-
+        pm.ButtonReset();
     }
 
 }
