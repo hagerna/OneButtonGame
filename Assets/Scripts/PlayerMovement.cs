@@ -6,6 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public float speed;
     public float jumpForce;
+    float jumpRay;
     Rigidbody2D rb2D;
     SpriteRenderer spriteRenderer;
     BoxCollider2D boxCollider;
@@ -18,8 +19,7 @@ public class PlayerMovement : MonoBehaviour
         rb2D = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         boxCollider = GetComponent<BoxCollider2D>();
-        speed = 6;
-        jumpForce = 5;
+        ButtonReset();
     }
 
     // Update is called once per frame
@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
         rb2D.velocity = vel;
         if (jumping)
         {
-            RaycastHit2D hit = Physics2D.Raycast(transform.position + new Vector3(0,-0.5f,0), Vector2.down, 0.2f);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, jumpRay);
             if (hit.collider != null)
             {
                 Debug.Log(hit.collider);
@@ -58,6 +58,7 @@ public class PlayerMovement : MonoBehaviour
         boxCollider.size = new Vector2(1, 0.75f);
         speed = 8;
         jumpForce = 7;
+        jumpRay = 0.5f;
     }
 
     public void ButtonReset()
@@ -66,5 +67,6 @@ public class PlayerMovement : MonoBehaviour
         boxCollider.size = new Vector2(1, 1.17f);
         speed = 5;
         jumpForce = 5;
+        jumpRay = 0.7f;
     }
 }
