@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 4456180506354185557}
   - component: {fileID: 7124795543828357638}
   - component: {fileID: -1553537165454272403}
-  - component: {fileID: -1533761821534531336}
+  - component: {fileID: 7393498423027189275}
   m_Layer: 0
   m_Name: blueblock
   m_TagString: Untagged
@@ -97,7 +97,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.9142857, y: 0.9142857, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &-1533761821534531336
+--- !u!114 &7393498423027189275
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,6 +106,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 8391269773825529042}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f9bc686b16672a84eb52cff9807bbb2d, type: 3}
+  m_Script: {fileID: 11500000, guid: c4afa16ec4afead4d8fbfb844742831a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
