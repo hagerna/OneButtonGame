@@ -664,19 +664,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4076969640424649379, guid: 52789f252bbed4e19bcc0d964ee3af93, type: 3}
       propertyPath: scenes.Array.data[3]
-      value: Nick Scene 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 4076969640424649379, guid: 52789f252bbed4e19bcc0d964ee3af93, type: 3}
-      propertyPath: scenes.Array.data[4]
       value: Yosslay Scene
       objectReference: {fileID: 0}
     - target: {fileID: 4076969640424649379, guid: 52789f252bbed4e19bcc0d964ee3af93, type: 3}
+      propertyPath: scenes.Array.data[4]
+      value: Nick Scene 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4076969640424649379, guid: 52789f252bbed4e19bcc0d964ee3af93, type: 3}
       propertyPath: scenes.Array.data[5]
-      value: Nick Scene
+      value: Yosslay Scene 2
       objectReference: {fileID: 0}
     - target: {fileID: 4076969640424649379, guid: 52789f252bbed4e19bcc0d964ee3af93, type: 3}
       propertyPath: scenes.Array.data[6]
-      value: Yosslay Scene 2
+      value: Nick Scene
       objectReference: {fileID: 0}
     - target: {fileID: 4076969640424649379, guid: 52789f252bbed4e19bcc0d964ee3af93, type: 3}
       propertyPath: scenes.Array.data[7]

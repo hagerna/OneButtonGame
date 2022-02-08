@@ -29,15 +29,24 @@ public class GameManager : MonoBehaviour
     public void PressButton() {
         playerPressed = true;
         FindObjectOfType<PlayerMovement>().ButtonPressed();
-        StopCoroutine(ResetButton());
         StartCoroutine(ResetButton());
     }
 
     IEnumerator ResetButton()
     {
-        yield return new WaitForSeconds(10f);
+        for (int i = 0; i < 10; i++)
+        {
+            yield return new WaitForSeconds(1f);
+            if (!playerPressed)
+            {
+                Debug.Log("Reset");
+                yield break;
+            }
+        }
+        if (playerPressed) {
+            FindObjectOfType<PlayerMovement>().ButtonReset();
+        }
         playerPressed = false;
-        FindObjectOfType<PlayerMovement>().ButtonReset();
     }
 
     IEnumerator IntroCutscene()
@@ -55,13 +64,11 @@ public class GameManager : MonoBehaviour
         currentScene++;
         SceneManager.LoadScene(scenes[currentScene]);
         playerPressed = false;
-        StopCoroutine(ResetButton());
     }
 
     public void LevelReset() {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         playerPressed = false;
-        StopCoroutine(ResetButton());
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
 
