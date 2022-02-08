@@ -671,7 +671,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1969251758510763625, guid: 9df7117e0ff291c45b35b14871641a0f, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1969251758510763625, guid: 9df7117e0ff291c45b35b14871641a0f, type: 3}
       propertyPath: m_LocalScale.x
@@ -802,7 +802,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1969251758510763625, guid: 9df7117e0ff291c45b35b14871641a0f, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1969251758510763625, guid: 9df7117e0ff291c45b35b14871641a0f, type: 3}
       propertyPath: m_LocalScale.x
@@ -1004,7 +1004,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1306275527}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: Platforms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1035,7 +1035,7 @@ Transform:
   - {fileID: 1069874751}
   - {fileID: 827298985}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1328889285 stripped
 Transform:

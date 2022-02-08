@@ -61,6 +61,7 @@ public class GameManager : MonoBehaviour
     {
         currentScene++;
         SceneManager.LoadScene(scenes[currentScene]);
+        playerPressed = false;
     }
 
 }

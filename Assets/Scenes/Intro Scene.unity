@@ -530,8 +530,8 @@ MonoBehaviour:
   music:
     name: Music
     clip: {fileID: 8300000, guid: 5109318e339c64e738f4f5c7d7a7147e, type: 3}
-    volume: 1
-    pitch: 0
+    volume: 0.5
+    pitch: 1
     loop: 1
     source: {fileID: 0}
 --- !u!4 &1135245532
@@ -644,11 +644,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4076969640424649379, guid: 52789f252bbed4e19bcc0d964ee3af93, type: 3}
       propertyPath: skipCutScene
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4076969640424649379, guid: 52789f252bbed4e19bcc0d964ee3af93, type: 3}
       propertyPath: scenes.Array.size
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 4076969640424649379, guid: 52789f252bbed4e19bcc0d964ee3af93, type: 3}
       propertyPath: scenes.Array.data[0]
@@ -660,10 +660,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4076969640424649379, guid: 52789f252bbed4e19bcc0d964ee3af93, type: 3}
       propertyPath: scenes.Array.data[2]
-      value: Yosslay Scene
+      value: Erika Scene 2
       objectReference: {fileID: 0}
     - target: {fileID: 4076969640424649379, guid: 52789f252bbed4e19bcc0d964ee3af93, type: 3}
       propertyPath: scenes.Array.data[3]
+      value: Yosslay Scene
+      objectReference: {fileID: 0}
+    - target: {fileID: 4076969640424649379, guid: 52789f252bbed4e19bcc0d964ee3af93, type: 3}
+      propertyPath: scenes.Array.data[4]
+      value: Nick Scene 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4076969640424649379, guid: 52789f252bbed4e19bcc0d964ee3af93, type: 3}
+      propertyPath: scenes.Array.data[5]
+      value: Nick Scene 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4076969640424649379, guid: 52789f252bbed4e19bcc0d964ee3af93, type: 3}
+      propertyPath: scenes.Array.data[6]
+      value: Nick Scene
+      objectReference: {fileID: 0}
+    - target: {fileID: 4076969640424649379, guid: 52789f252bbed4e19bcc0d964ee3af93, type: 3}
+      propertyPath: scenes.Array.data[7]
+      value: End Scene
+      objectReference: {fileID: 0}
+    - target: {fileID: 4076969640424649379, guid: 52789f252bbed4e19bcc0d964ee3af93, type: 3}
+      propertyPath: scenes.Array.data[8]
       value: Nick Scene
       objectReference: {fileID: 0}
     - target: {fileID: 8752006399425139556, guid: 52789f252bbed4e19bcc0d964ee3af93, type: 3}
