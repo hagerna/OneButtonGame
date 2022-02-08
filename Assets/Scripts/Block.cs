@@ -6,21 +6,28 @@ public class Block : MonoBehaviour
 {
     private GameManager gm;
     private SpriteRenderer sr;
+    private BoxCollider2D bc;
 
     void Start()
     {
         gm = FindObjectOfType<GameManager>();
-        sr = FindObjectOfType<SpriteRenderer>();
+        sr = GetComponent<SpriteRenderer>();
+        bc = GetComponent<BoxCollider2D>();
 
         sr.enabled = false;
     }
 
     void Update()
     {
-        if (gm.playerPressed) 
+        if (gm.playerPressed)
         {
             sr.enabled = true;
-            transform.position = new Vector2(1.3f, -2.59f);
+            bc.enabled = true;
+        }
+        else 
+        {
+            sr.enabled = false;
+            bc.enabled = false;
         }
     }
 }
