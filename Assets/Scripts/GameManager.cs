@@ -39,7 +39,6 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(1f);
             if (!playerPressed)
             {
-                Debug.Log("Reset");
                 yield break;
             }
         }

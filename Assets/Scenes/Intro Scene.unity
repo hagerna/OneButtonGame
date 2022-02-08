@@ -644,7 +644,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4076969640424649379, guid: 52789f252bbed4e19bcc0d964ee3af93, type: 3}
       propertyPath: skipCutScene
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4076969640424649379, guid: 52789f252bbed4e19bcc0d964ee3af93, type: 3}
       propertyPath: scenes.Array.size
