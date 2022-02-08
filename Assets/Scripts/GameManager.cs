@@ -26,15 +26,10 @@ public class GameManager : MonoBehaviour
         StartCoroutine(IntroCutscene());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public void PressButton() {
         playerPressed = true;
         FindObjectOfType<PlayerMovement>().ButtonPressed();
+        StopCoroutine(ResetButton());
         StartCoroutine(ResetButton());
     }
 
@@ -60,6 +55,14 @@ public class GameManager : MonoBehaviour
         currentScene++;
         SceneManager.LoadScene(scenes[currentScene]);
         playerPressed = false;
+        StopCoroutine(ResetButton());
     }
+
+    public void LevelReset() {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        playerPressed = false;
+        StopCoroutine(ResetButton());
+    }
+
 
 }

@@ -73,7 +73,7 @@ public class PlayerMovement : MonoBehaviour
     {
         if (col.gameObject.CompareTag("Danger")) 
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            FindObjectOfType<GameManager>().LevelReset();
         }
     }
 }
