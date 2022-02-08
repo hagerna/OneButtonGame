@@ -30,6 +30,10 @@ public class ButtonTrigger : MonoBehaviour
         if (!gm.playerPressed)
         {
             gm.PressButton();
+            if (collision.collider.CompareTag("Goal"))
+            {
+                gm.LevelComplete();
+            }
         }
     }
 }
