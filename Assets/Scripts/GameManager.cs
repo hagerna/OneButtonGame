@@ -54,6 +54,7 @@ public class GameManager : MonoBehaviour
             yield return new WaitForSeconds(38f);
         }
         SceneManager.LoadScene(scenes[currentScene]);
+        FindObjectOfType<AudioManager>().Play("Music");
     }
 
     public void LevelComplete()
