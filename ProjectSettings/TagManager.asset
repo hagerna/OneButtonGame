@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Platform
   - Danger
+  - Goal
   layers:
   - Default
   - TransparentFX

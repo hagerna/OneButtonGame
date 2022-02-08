@@ -10,10 +10,14 @@ public class GameManager : MonoBehaviour
     public string[] scenes;
     int currentScene;
     public bool skipCutScene;
+    public bool DestroyonLoad;
 
     private void Awake()
     {
-        DontDestroyOnLoad(gameObject);
+        if (!DestroyonLoad)
+        {
+            DontDestroyOnLoad(gameObject);
+        }
     }
     // Start is called before the first frame update
     void Start()

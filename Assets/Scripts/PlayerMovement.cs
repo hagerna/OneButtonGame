@@ -43,7 +43,6 @@ public class PlayerMovement : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.down, jumpRay);
             if (hit.collider != null)
             {
-                Debug.Log(hit.collider);
                 if (hit.collider.CompareTag("Platform"))
                 {
                     jumping = false;
