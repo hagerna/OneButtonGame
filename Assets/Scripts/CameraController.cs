@@ -15,12 +15,9 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
-        if (transform.position.x >= 0)
-        {
-            Vector3 pos = transform.position;
-            pos.x = player.position.x + offsetX;
-            pos.y = player.position.y + offsetY;
-            transform.position = pos;
-        }
+        Vector3 pos = transform.position;
+        pos.x = player.position.x + offsetX;
+        pos.y = player.position.y + offsetY;
+        transform.position = pos;
     }
 }
