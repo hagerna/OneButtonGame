@@ -18,21 +18,21 @@ public class UpDownBlock : MonoBehaviour
     {
         if (transform.position.y >= maxY)
         {
-            transform.Translate(Vector3.down * Time.deltaTime);
+            transform.Translate(Vector3.down * speed * Time.deltaTime);
             goesUp = false;
         }
         else if (transform.position.y <= minY)
         {
-            transform.Translate(Vector3.up * Time.deltaTime);
+            transform.Translate(Vector3.up * speed * Time.deltaTime);
             goesUp = true;
         }
         else if (transform.position.y < maxY && !goesUp)
         {
-            transform.Translate(Vector3.down * Time.deltaTime);
+            transform.Translate(Vector3.down * speed * Time.deltaTime);
         }
         else if (transform.position.y > minY && goesUp)
         {
-            transform.Translate(Vector3.up * Time.deltaTime);
+            transform.Translate(Vector3.up * speed * Time.deltaTime);
         }
         
     }

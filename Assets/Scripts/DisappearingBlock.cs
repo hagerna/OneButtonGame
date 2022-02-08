@@ -19,12 +19,12 @@ public class DisappearingBlock : MonoBehaviour
         if (gm.playerPressed)
         {
             sr.enabled = false;
-            sr.GetComponent<Collider2D>().isTrigger = true;
+            sr.GetComponent<Collider2D>().enabled = false;
         }
         else
         {
             sr.enabled = true;
-            sr.GetComponent<Collider2D>().isTrigger = false;
+            sr.GetComponent<Collider2D>().enabled = true;
         }
     }
 }
