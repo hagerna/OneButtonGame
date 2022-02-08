@@ -20,4 +20,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Intro Scene.unity
     guid: 0eed4a6363972413ca23f268523e31b9
+  - enabled: 1
+    path: Assets/Scenes/Erika Scene 2.unity
+    guid: 641d9fd880e2c41318a70be32b55f404
+  - enabled: 1
+    path: Assets/Scenes/Nick Scene 2.unity
+    guid: 5e8a9aa3aeee74cb7a1772e97848de43
+  - enabled: 1
+    path: Assets/Scenes/Nick Scene 3.unity
+    guid: d147da5670b654c09ad0f723ae7711cc
   m_configObjects: {}

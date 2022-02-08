@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public bool playerPressed;
-    PlayerMovement pm;
     public string[] scenes;
     int currentScene;
     public bool skipCutScene;
@@ -23,7 +22,6 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         playerPressed = false;
-        pm = FindObjectOfType<PlayerMovement>();
         currentScene = 1;
         StartCoroutine(IntroCutscene());
     }
@@ -36,7 +34,7 @@ public class GameManager : MonoBehaviour
 
     public void PressButton() {
         playerPressed = true;
-        pm.ButtonPressed();
+        FindObjectOfType<PlayerMovement>().ButtonPressed();
         StartCoroutine(ResetButton());
     }
 
@@ -44,7 +42,7 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(10f);
         playerPressed = false;
-        pm.ButtonReset();
+        FindObjectOfType<PlayerMovement>().ButtonReset();
     }
 
     IEnumerator IntroCutscene()

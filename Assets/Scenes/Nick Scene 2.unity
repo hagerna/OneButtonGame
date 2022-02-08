@@ -554,6 +554,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: disappearing_when_pressed_platform (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5576730222285960351, guid: b56409889836a40ae81f252c1c415d2d, type: 3}
+      propertyPath: m_TagString
+      value: Goal
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b56409889836a40ae81f252c1c415d2d, type: 3}
 --- !u!1001 &818948062
