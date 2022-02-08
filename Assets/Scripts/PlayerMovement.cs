@@ -45,7 +45,6 @@ public class PlayerMovement : MonoBehaviour
                 Debug.Log(hit.collider);
                 if (hit.collider.CompareTag("Platform"))
                 {
-                    Debug.Log(hit.collider);
                     jumping = false;
                 }
             }
