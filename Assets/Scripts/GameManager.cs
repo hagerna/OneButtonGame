@@ -66,8 +66,9 @@ public class GameManager : MonoBehaviour
     }
 
     public void LevelReset() {
-        playerPressed = false;
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        playerPressed = false;
+        FindObjectOfType<PlayerMovement>().ButtonReset();
     }
 
 

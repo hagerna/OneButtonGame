@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Yosslay Scene 2.unity
     guid: a9ea93c06358dc14e8e0250ff48bb5ae
+  - enabled: 1
+    path: Assets/Scenes/End Scene.unity
+    guid: ea3fe87dfc96d4b83947b41edde4baac
   m_configObjects: {}
